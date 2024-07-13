@@ -6,11 +6,17 @@ import NavBar from "../components/common/navBar";
 import Logo from "../components/common/logo";
 
 import "./styles/404.css";
+import { useNavigate } from "react-router-dom";
 
 const Notfound = () => {
+	const navigate = useNavigate();
 	useEffect(() => {
 		document.title = `404 | Portfolio`;
-	}, []);
+
+		if (window.location.pathname !== "/404") {
+			navigate("/404", { replace: true });
+		  }
+	}, [navigate]);
 
 	return (
 		<>
