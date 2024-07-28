@@ -25,32 +25,32 @@ const Homepage = () => {
 	}, []);
 
 	const [logoSize, setLogoSize] = useState(120);
-    const [stayLogo, setStayLogo] = useState(false);
+	const [stayLogo, setStayLogo] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const scroll = window.pageYOffset;
+	useEffect(() => {
+		const handleScroll = () => {
+			const scroll = window.pageYOffset;
 
-            if (scroll === 0) {
-                setLogoSize(120);
-                setStayLogo(false);
-                return;
-            }
+			if (scroll === 0) {
+				setLogoSize(120);
+				setStayLogo(false);
+				return;
+			}
 
-            const newLogoSize = 120 - (scroll * 4) / 20;
+			const newLogoSize = 120 - (scroll * 4) / 20;
 
-            if (newLogoSize > 80) {
-                setLogoSize(newLogoSize);
-                setStayLogo(false);
-            } else {
-                setLogoSize(70);
-                setStayLogo(true);
-            }
-        };
+			if (newLogoSize > 80) {
+				setLogoSize(newLogoSize);
+				setStayLogo(false);
+			} else {
+				setLogoSize(70);
+				setStayLogo(true);
+			}
+		};
 
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+		window.addEventListener("scroll", handleScroll);
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, []);
 
 	const logoStyle = {
 		display: "flex",
@@ -67,18 +67,14 @@ const Homepage = () => {
 			<div className="page-content">
 				<NavBar active="home" />
 				<div className="content-wrapper">
-					
-
 					<div className="homepage-container">
-					
 						<div className="homepage-first-area">
-						<div className="homepage-logo-container">
-						<div style={logoStyle} >
-							<Logo width={logoSize} link={false} />
-						</div>
-					</div>
+							{/* <div className="homepage-logo-container">
+								<div style={logoStyle}>
+									<Logo width={logoSize} link={false} />
+								</div>
+							</div> */}
 							<div className="homepage-first-area-left-side">
-								
 								<div className="title homepage-title">
 									<span className="different">Hi there.</span>{" "}
 									I'm Vinay

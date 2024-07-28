@@ -18,11 +18,11 @@ const Projects = () => {
 			<div className="page-content">
 				<NavBar active="projects" />
 				<div className="content-wrapper">
-					<div className="projects-logo-container">
+					{/* <div className="projects-logo-container">
 						<div className="projects-logo">
 							<Logo width={46} />
 						</div>
-					</div>
+					</div> */}
 					<div className="projects-container">
 
 						<div className="projects-list">
