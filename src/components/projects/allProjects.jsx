@@ -6,6 +6,22 @@ import "./styles/allProjects.css";
 
 const projects = [
 	{
+		title: "ConnectMe",
+		description:
+			"A platform allowing users to create and share customized landing pages, designed for seamless social media integration and increase personal branding.",
+		logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+		linkText: "View Project",
+		link: "https://connectme-v1.vercel.app/",
+	},
+	{
+		title: "FitBuddy",
+		description:
+			"A health companion app for generating personalized recipes based on user input like chronic diseases, dietary preferences, and nutritional goals.",
+		logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+		linkText: "View Project",
+		link: "https://fit-buddy-6w8r.onrender.com/",
+	},
+	{
 		title: "Trippins",
 		description:
 			"The go-to platform for pinning and sharing travel adventures with ease.",

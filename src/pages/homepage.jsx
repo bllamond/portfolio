@@ -30,7 +30,7 @@ const Homepage = () => {
 								<span className="highlight-text">Hi there.</span> I’m{" "}
 								<span className="name-highlight ">Vinay</span>,
 								<br />
-								a <span className="highlight-text">Software Engineer</span> mainly focused {" "}
+								a <span className="">Software Engineer</span> mainly focused {" "}
 								<br />
 								<span className="">on web development.</span>
 							</h1>
