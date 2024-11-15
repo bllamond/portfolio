@@ -3,7 +3,6 @@ import Homepage from "./pages/homepage";
 import About from "./pages/about";
 import Projects from "./pages/projects";
 import Contact from "./pages/contact";
-import Notfound from "./pages/404";
 
 import "./App.css";
 

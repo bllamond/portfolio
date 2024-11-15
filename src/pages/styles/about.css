@@ -23,7 +23,7 @@
 	/* align-items: center; */
     padding-bottom: 25px;
 	margin: 0;
-	padding-top: 80px;
+	padding-top: 100px;
 }
 
 .about-main {
@@ -122,6 +122,11 @@
 }
 
 @media (max-width: 600px) {
+	.about-title{
+		width: 250px;
+		padding-top: 50px;
+		font-size: 37px;
+	}
 	.about-container {
 		padding-top: 60px;
 		
