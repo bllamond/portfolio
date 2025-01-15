@@ -1,37 +1,57 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
-import "./styles/footer.css";
 
 const Footer = () => {
-	return (
-		<>
-			<div className="footer">
-				<div className="footer-links">
-					<ul className="footer-nav-link-list">
-						<li className="footer-nav-link-item">
-							<Link to="/">Home</Link>
-						</li>
-						<li className="footer-nav-link-item">
-							<Link to="/about">About</Link>
-						</li>
-						<li className="footer-nav-link-item">
-							<Link to="/projects">Projects</Link>
-						</li>
-						<li className="footer-nav-link-item">
-							<Link to="/contact">Contact</Link>
-						</li>
-					</ul>
-				</div>
+  return (
+    <footer className=" py-8">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col items-center">
+          {/* Footer Links */}
+          <nav className="mb-6">
+            <ul className="flex flex-wrap justify-center space-x-6">
+              <li>
+                <a
+                  href="#hero-section"
+                  className="text-gray-600 hover:text-teal-600 transition-colors duration-300 text-sm font-medium"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#about-section"
+                  className="text-gray-600 hover:text-teal-600 transition-colors duration-300 text-sm font-medium"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#projects-section"
+                  className="text-gray-600 hover:text-teal-600 transition-colors duration-300 text-sm font-medium"
+                >
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact-section"
+                  className="text-gray-600 hover:text-teal-600 transition-colors duration-300 text-sm font-medium"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
 
-				<div className="footer-credits">
-					<div className="footer-credits-text">
-						All Rights Reserved © Vinay Malik 2024 
-					</div>
-				</div>
-			</div>
-		</>
-	);
+          {/* Footer Credits */}
+          <div className="text-gray-500 text-sm text-center">
+            &copy; {new Date().getFullYear()} Vinay Malik. All Rights Reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;
+
