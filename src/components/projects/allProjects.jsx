@@ -18,13 +18,6 @@ const featuredProjects = [
     link: "https://fit-buddy-6w8r.onrender.com/",
     languages: ["Python", "Django", "HTML"],
   },
-  {
-    title: "FitBuddy",
-    description: "A health companion app for generating personalized recipes based on user input like chronic diseases, dietary preferences, and nutritional goals.",
-    linkText: "View Project",
-    link: "https://fit-buddy-6w8r.onrender.com/",
-    languages: ["Python", "Django", "HTML"],
-  },
 ];
 
 const otherProjects = [

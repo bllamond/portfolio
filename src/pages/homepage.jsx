@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faTwitter,
@@ -14,10 +13,10 @@ const Homepage = () => {
 	return (
 		<>
 			<div className="flex flex-col min-h-screen bg-white">
-				{/* Navigation Bar */}
+				
 				<NavBar active="home" />
 
-				{/* Page Content */}
+				
 				<div className="flex flex-col flex-grow">
 					{/* Hero Section */}
 					<div
